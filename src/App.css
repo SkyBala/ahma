@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+
+.pageTitul img {
+  width: 430px;
+  height: 732px;
+}
+.pageImg {
+  width: 400px;
+  height: 300px;
+}
+.pages {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+}
