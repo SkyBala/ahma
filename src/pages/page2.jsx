@@ -1,38 +1,13 @@
-import React, { useState, useRef } from "react";
 import Aiday1 from "../images/2.png";
 
 function Page2() {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const audioPlayer = useRef(null);
-
-  const togglePlay = () => {
-    if (!isPlaying) {
-      audioPlayer.current.play();
-    } else {
-      audioPlayer.current.pause();
-    }
-    setIsPlaying(!isPlaying);
-  };
-
-  const stopPlayback = () => {
-    audioPlayer.current.pause();
-    audioPlayer.current.currentTime = 0;
-    setIsPlaying(false);
-  };
-
+ 
   return (
     <div className="pages">
       <div>
         <img className="pageImg" src={Aiday1} alt="" />
       </div>
-      <div>
-        <h1 className="audioH1">ahmad</h1>
-        <audio ref={audioPlayer} />
-        <div>
-          <button onClick={togglePlay}>{isPlaying ? "Pause" : "Play"}</button>
-          <button onClick={stopPlayback}>Stop</button>
-        </div>
-      </div>
+      <h2>"Твоя улыбка ослепительнее солнца поэтому я хочу называть тебя своим солнышком"</h2>
     </div>
   );
 }
